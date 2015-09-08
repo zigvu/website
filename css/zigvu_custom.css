@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #000000;
+    background-color: #222222;
 }
 
 html {
@@ -257,22 +257,43 @@ a:focus {
     }
 }
 
+// note: this should be equal to height of navbar
 .content-section {
-    padding-top: 100px;
+    padding-top: 50px;
+}
+.text-content {
+    padding-top: 50px;
 }
 
-.download-section {
+/* BEGIN: Background images */
+#technology{
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
+    background: url(../img/technology-bg.jpg) no-repeat center center scroll;
+    background-color: #222;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
+#carousel-1{
+    background: url(../img/product-1.jpg) no-repeat center right fixed;
+}
+#carousel-2{
+    background: url(../img/product-2.jpg) no-repeat center right fixed;
+}
+#carousel-3{
+    background: url(../img/product-3.jpg) no-repeat center right fixed;
+}
+#carousel-4{
+    background: url(../img/product-4.jpg) no-repeat center right fixed;
+}
+/* END: Background images */
+
+
+/* BEGIN: Map */
 #map {
     width: 100%;
     height: 200px;
@@ -281,7 +302,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 50px;
     }
 
     .download-section {
@@ -293,6 +314,7 @@ a:focus {
         margin-top: 250px;
     }
 }
+/* END: Map */
 
 .btn {
     border-radius: 0;
@@ -367,6 +389,31 @@ img::selection {
 img::-moz-selection {
     background: 0 0;
 }
+
+
+/* BEGIN: Carausel */
+.carousel {
+    height: 600px;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    background-position: center;
+    background-color: #222222;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/* EBD: Carausel */
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
