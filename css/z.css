@@ -180,46 +180,7 @@ a:focus {
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
-}
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
-}
-
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
 }
 
 @-webkit-keyframes pulse {    
@@ -258,62 +219,13 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
-}
-
-#zCarousel {
-    width: 100%;
-}
-.carousel-inner .item {
-    width: 100%;
-    height: 500px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.bg1 {
-    background: url(../img/product-1.jpg) no-repeat center center scroll; 
-}
-.bg2 {
-    background: url(../img/product-2.jpg) no-repeat center center scroll; 
-}
-.bg3 {
-    background: url(../img/product-3.jpg) no-repeat center center scroll; 
-}
-.bg4 {
-    background: url(../img/product-4.jpg) no-repeat center center scroll; 
-}
-
-.tech {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/techbg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
+    padding-bottom: 100px;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
-    }
-
-    .tech {
-        padding: 50px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 100px;
+        padding-top: 300px;
+        padding-bottom: 350px;
     }
 }
 
@@ -352,7 +264,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 footer p {
