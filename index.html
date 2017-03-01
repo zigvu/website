@@ -6,27 +6,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="zigvu website">
-    <meta name="author" content="zigvu.com">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>zigvu : Powerful analytics for the visual world</title>
+    <title>Zigvu : visual AI for your projects</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/z.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <link rel="shortcut icon" href="img/z.ico">
 
-    <script type="text/javascript">
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/creative.css" rel="stylesheet">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K639CDH');</script>
+<!-- End Google Tag Manager -->
+
+
+<script type="text/javascript">
         var appInsights=window.appInsights||function(config){
-            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var 
+t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return 
+r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var 
+s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
         }({
             instrumentationKey:"75424720-f904-4349-870a-777a464b5eb6"
         });
@@ -34,35 +48,56 @@
         window.appInsights=appInsights;
         appInsights.trackPageView();
     </script>
-    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92529289-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K639CDH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <span class="light"><img src="img/zlogo.png"></span>
-                </a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="img-responsive" src="img/zlogo.png" 
+alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#solutions">Solutions</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#tech">Technology</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#company">Company</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -71,66 +106,295 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">World is going visual</h1>
-                        <p>The shift is happening ...<br>massively mobile, falling use of text, on-demand video, explosion of user generated content, popularity of live broadcast.<br>How do you keep track?</p><br><br><br>
-			<p>We enable highly accurate analytics of visual content. We believe this can revolutionize the way many media verticals currently function.</p>
-                    </div>
-                </div>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Zigvu brings power of visual AI to your projects</h1>
+                <hr>
+                <p>Augmented applications. Visual analytics.<br>Auto select and summary.<br>
+		   Highly accurate visual data tuning. 
+		</p>
+                <a href="#solutions" class="btn btn-primary btn-xl page-scroll">Learn More</a>
             </div>
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h3>Contact</h3>
-                <p>Push the boundaries of what is possible in next generation media. Get in touch with us to subscribe our service or join our team.<br><br><a href="mailto:contact@zigvu.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">contact@zigvu.com</span></a></p>
+    <section id="solutions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Solutions</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-5x fa-play-circle-o text-primary sr-icons"></i>
+                        <h3>Application</h3>
+                        <h5 class="text-muted text-justify">Add visual intelligence to your augmented applications. 
+We manage all underlying layers to empower your offerings with well-tuned visual models, so you can focus on your 
+product and business. Supplement any video based application with intelligence and accelerate adoption.</h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-5x fa-area-chart text-primary sr-icons"></i>
+                        <h3>Analytics</h3>
+                        <h5 class="text-muted text-justify">Deep insights from visual media, not available with 
+traditional text based approach. We handle any source – online video streams, TV, live broadcast or internal assets 
+to serve you analytics of visual content. Utilize auto summary of important events. Intuitive interface for easy 
+slice-and-dice. <a 
+href="mailto:demo@zigvu.com?subject=Request%20for%20Demo&body=Saw%20your%20website.%20Can%20you%20schedule%20a%20demo%20session%20for%20us?">Request 
+demo</a></h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-5x fa-server text-primary sr-icons"></i>
+                        <h3>Data Services</h3>
+                        <h5 class="text-muted text-justify">Very high accuracy through custom data tuning. We 
+provide 
+high-value annotations and data tuning service to fit your exact needs. Integrate visual intelligence supported with 
+well maintained data models. Improve and scale beyond general API solutions.</h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-5x fa-cogs text-primary sr-icons"></i>
+                        <h3>Custom Solutions</h3>
+                        <h5 class="text-muted text-justify">Solutions that meet your specific business needs and 
+make 
+most use of our expertise. Engage with us on project basis to take advantage of our visual AI framework. Utilize 
+well-tuned learning models and build tightly integrated products. <a class="page-scroll" href="#contact">Contact 
+us</a> to get started.</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <section id="tech">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Technology</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category">
+                                    Scalable design
+                                </div>
+                                <div class="project-name">
+                                    Large number of simultaneous streams ...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+		 <div id="scalable-design" class="mfp-hide">
+Powered by latest Artificial Intelligence (AI) technology, our platform can input any media stream including 
+real-time feeds. Visual media such as video have highest information density and scale fast. Our platform is 
+specially architected to manage large number of simultaneous streams.
+		 </div>
+                </div>
+                <div class="col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category">
+                                    Deep Learning
+                                </div>
+                                <div class="project-name">
+                                    Driven by state-of-the-art methods ...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+		 <div id="deep-learning" class="mfp-hide">
+Visual AI services we provide are driven by state-of-the-art machine vision including Deep Learning methods. We 
+build and maintain highly accurate models, so they deliver consistently reliable results. Built-in visual data 
+tuning makes our results highly accurate.
+                 </div>
+                </div>
+                <div class="col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category">
+                                    High accuracy
+                                </div>
+                                <div class="project-name">
+                                    Consistently reliable intelligence ...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+		 <div id="high-accuracy" class="mfp-hide">
+Our custom-built stack enables us to do fine quality control and maintain high accuracy of detections and outputs.  
+Every iteration of visual processing reinforces performance of the stack and prevents it from straying too far from 
+desired results.
+                 </div>
+                </div>
+                <div class="col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category">
+                                    Fluid interface
+                                </div>
+                                <div class="project-name">
+                                    Actionable insights with adaptive UI ...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+		 <div id="fluid-interface" class="mfp-hide">
+We believe analytics and reports are as useful as the ease of their interfaces. Users of our platform can find 
+answers and explore insights via intuitive and adaptive UI. Built-in features allow easy slice-and-dice that are 
+further supported by auto selection and summary.
+                 </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="company">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 text-center">
+                    <h2 class="section-heading">Company</h2>
+                    <hr class="primary">
+                    <h4 class="text-justify">Advancements in chip-level parallel computing and Artificial 
+Intelligence (AI) have opened up new opportunities in visual media ... to augment existing applications, create 
+powerful new ones and analyze metrics in ways not previously possible. We see that applications that are tightly 
+integrated with visual detection and intelligence can create whole new category of services. Our goal is to bring 
+visual AI in user-friendly manner to benefit all such projects.</h4><br>
+<h4 class="text-justify">Zigvu team has deep expertise in technology and business of large scale data, visual 
+media, enterprise-grade analytics and customer success. We implement Machine Learning techniques including Deep Learning 
+optimized from the hardware level up. We are based in Silicon Valley with distributed international team.</h4><br>
+<h4 class="text-justify"><a class="page-scroll" href="#contact">Join us</a> to push the boundaries of next generation 
+in visual media.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
         <div class="container text-center">
-            <p><sub>&copy; 
+            <div class="call-to-action">
+                <h2>Explore what we offer</h2>
+                <a href="mailto:demo@zigvu.com?subject=Request%20for%20Demo&body=Saw%20your%20website.%20Can%20you%20schedule%20a%20demo%20session%20for%20us?" 
+class="btn btn-default btn-xl sr-button">Request Demo</a> 
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact</h2>
+                    <hr class="primary">
+                    <h4>Please email or call us to get in touch.</h4><br>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <h4><a href="mailto:info@zigvu.com?subject=Saw your website - 
+zigvu.com">info@zigvu.com</a></h4>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <h4><a href="tel:14155626748">(415) 562-6748</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container">
+            <div class="call-to-action col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2">
+
+<!--begin mc_embed_signup-->
+<div id="mc_embed_signup">
+<form
+action="//zigvu.us15.list-manage.com/subscribe/post?u=0d112ef29902d35cf5509cfa7&amp;id=f3b5a4b684"
+method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+        <h4>Sign up to receive our news and updates</h4>
+	<div class="row mc-field-group">
+	 <div class="col-xs-8">
+	  <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" 
+placeholder="Email address"> 
+	 </div>
+          <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot
+signups-->
+    	  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+name="b_0d112ef29902d35cf5509cfa7_f3b5a4b684" tabindex="-1" value="">
+	  </div>
+	  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Submit</button> 
+<br><br> 
+    	</div>
+     </div>
+</form>
+</div>
+<script type='text/javascript'
+src='js/mc-validate.js'></script><script
+type='text/javascript'>(function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';
+        }
+        (jQuery));var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+		<br><br><br><br><br>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <p><sub>&copy;
                 <script language="JavaScript" type="text/javascript">
                         now = new Date
                         theYear=now.getYear()
                         document.write(theYear+1900)
-                </script> zigvu </sub></p>
+                </script> Zigvu, Inc. </sub></p>
         </div>
-    </footer>
+    </aside>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/z.js"></script>
-
-    <!-- zCarousel JavaScript -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-             $('.carousel').carousel({
-                     interval: 15000
-             });
-         });
-    </script>
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
 
